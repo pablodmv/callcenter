@@ -15,6 +15,6 @@ import objVirtual.Pedido;
  */
 public interface PedidoRemoto extends Remote {
 
-    public Pedido salvarPedido(Pedido pedido) throws RemoteException ;
+    public void salvarPedido(Pedido pedido) throws RemoteException ;
     
 }

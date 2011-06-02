@@ -23,7 +23,7 @@ public class PedidoServices extends UnicastRemoteObject implements PedidoRemoto 
 
   }
 
-    public Pedido salvarPedido(Pedido ped) throws RemoteException {
+    public void salvarPedido(Pedido ped) throws RemoteException {
 
           try {
             if (ped == null || ped.getIdCliente() == 0) {
@@ -39,7 +39,7 @@ public class PedidoServices extends UnicastRemoteObject implements PedidoRemoto 
         } catch (Exception ex) {
             Logger.getLogger(PedidoServices.class.getName()).log(Level.SEVERE, null, ex);
         }
-         return ped;
+        
        }
 
     }
