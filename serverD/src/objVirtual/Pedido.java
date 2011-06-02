@@ -23,8 +23,7 @@ public class Pedido  implements Serializable  {
     public Pedido() {
     }
 
-    public Pedido(long id, long idCliente, long idProveedor, String mensaje, boolean estado) {
-       this.id = id;
+    public Pedido( long idCliente, long idProveedor, String mensaje, boolean estado) {
        this.idCliente = idCliente;
        this.idProveedor = idProveedor;
        this.mensaje = mensaje;
