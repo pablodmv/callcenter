@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29/05/2011 07:14:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="callcenter" name="objVirtual.Pedido" table="Pedido">
+    <id name="id" type="long" unsaved-value="0">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="idCliente" type="long">
+      <column name="idCliente" not-null="true"/>
+    </property>
+    <property name="idProveedor" type="long">
+      <column name="idProveedor" not-null="true"/>
+    </property>
+    <property name="mensaje" type="string">
+      <column name="Mensaje" not-null="true"/>
+    </property>
+    <property name="estado" type="boolean">
+      <column name="Estado" not-null="true" precision="1" scale="0"/>
+    </property>
+  </class>
+</hibernate-mapping>
