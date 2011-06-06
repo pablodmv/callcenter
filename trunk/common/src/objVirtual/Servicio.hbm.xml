@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05/06/2011 10:40:43 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="objVirtual.Servicio" table="Servicio" catalog="callcenter">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="descripcion" type="string">
+            <column name="Descripcion" not-null="true" />
+        </property>
+        <property name="costo" type="double">
+            <column name="Costo" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="estado" type="boolean">
+            <column name="Estado" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="idProveedor" type="long">
+            <column name="idProveedor" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
