@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 05/06/2011 10:40:43 PM by Hibernate Tools 3.2.1.GA -->
+<!-- Generated 09/06/2011 05:53:44 PM by Hibernate Tools 3.2.1.GA -->
 <hibernate-mapping>
-    <class name="objVirtual.Servicio" table="Servicio" catalog="callcenter">
+    <class name="objVirtual.Servicio" table="servicio" catalog="callcenter">
         <id name="id" type="java.lang.Long">
             <column name="id" />
             <generator class="identity" />
