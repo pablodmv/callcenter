@@ -1,0 +1,15 @@
+08:37:08,349  INFO ApplicationAView:131 - 555-Pruebababa
+08:44:37,416  INFO ApplicationAView:131 - Llamada Entrante:555-Hola
+08:47:24,772  INFO - Llamada Entrante al proveedor: 678
+09:03:14,804  INFO - Llamada Entrante del cliente: 111al proveedor: 345
+09:05:19,691  INFO - Llamada Entrante del cliente: 1 al proveedor: 23
+09:05:24,057  INFO - Llamada Entrante del cliente: 1 al proveedor: 23
+09:05:24,209  INFO - Llamada Entrante del cliente: 1 al proveedor: 23
+09:05:24,377  INFO - Llamada Entrante del cliente: 1 al proveedor: 23
+09:05:24,537  INFO - Llamada Entrante del cliente: 1 al proveedor: 23
+09:27:31,028  INFO - Llamada Entrante del cliente: 1 al proveedor: 2
+09:27:39,883  INFO - Llamada Entrante del cliente: 1 al proveedor: 2
+09:41:48,436  INFO - Llamada Entrante del cliente: 1 al proveedor: 2
+09:55:10,670  INFO - Llamada Entrante del cliente: 1 al proveedor: 2
+09:55:51,693  INFO - Llamada Entrante del cliente: 1 al proveedor: 2
+09:56:48,360  INFO - Llamada Entrante del cliente: 90909 al proveedor: 7777

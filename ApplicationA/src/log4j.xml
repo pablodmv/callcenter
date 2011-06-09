@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<!--
+    Document   : log4j.xml
+    Created on : 18 de mayo de 2011, 05:55 PM
+    Author     : Gustavo Leites
+    Description:
+        Purpose of the document follows.
+-->
+
+<log4j:configuration>
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+           <param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+    <appender name="FA" class="org.apache.log4j.FileAppender">
+        <!--Ruta al archivo de log correspondiente -->
+        <param name="File" value="C:/Users/Gustavo Leites/ORT/Semestre 6/Arq.Software/obligatorio/ApplicationA/logs/callRegistry.log"/>
+        <param name="Threshold" value="INFO"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %5p - %m%n" />
+        </layout>
+    </appender>
+    
+    <root>
+        <priority value="debug"></priority>
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="FA"/>
+    </root>
+</log4j:configuration>
