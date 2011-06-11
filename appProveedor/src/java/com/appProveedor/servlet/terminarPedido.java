@@ -46,7 +46,7 @@ public class terminarPedido extends HttpServlet {
                 pedido.setEstado(false);
 
                 PedidoServices.salvarPedido(pedido);
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/successSaveServicio.jsp");
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/successEndPedido.jsp");
                 dispatcher.forward(request, response);
 
 
