@@ -2,7 +2,9 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="callcenter"/>
-  <table-filter match-name="Servicio"/>
-  <table-filter match-name="Proveedor"/>
-  <table-filter match-name="Cliente"/>
+  <table-filter match-name="servicio"/>
+  <table-filter match-name="pedido"/>
+  <table-filter match-name="proveedor"/>
+  <table-filter match-name="credenciales"/>
+  <table-filter match-name="cliente"/>
 </hibernate-reverse-engineering>
