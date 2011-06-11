@@ -5,18 +5,21 @@
 
 package com.appProveedor.servlet;
 
+import com.appProveedor.services.PedidoServices;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import objVirtual.Pedido;
 
 /**
  *
- * @author pablo
+ * @author Gustavo Leites
  */
-public class login extends HttpServlet {
+public class terminarPedido extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -30,17 +33,39 @@ public class login extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            /* TODO output your page here
+
+            String idStr = request.getParameter("idPedido");
+
+            //out.println(descServicio + "-" + costoStr + request.getRemoteUser());
+            Long idPed = Long.parseLong(idStr);
+
+
+                Pedido pedido = PedidoServices.obtenerPedidoPorId(idPed);
+                //out.println(prov.getNombre());
+
+                pedido.setEstado(false);
+
+                PedidoServices.salvarPedido(pedido);
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/successSaveServicio.jsp");
+                dispatcher.forward(request, response);
+
+
+        }catch(NumberFormatException nFEx){
+            response.sendRedirect("dataError.jsp");
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet login</title>");  
+            out.println("<title>Error al registrar el servicio</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet login at " + request.getContextPath () + "</h1>");
+            out.println("<h2>Se produjo un error al registrar el servicio</h2>");
+            out.println("<h4>Intentelo mas tarde</h4>");
+            out.println("<a href='regServicio.jsp' id='link1'>Volver</a><br/>");
             out.println("</body>");
             out.println("</html>");
-            */
-        } finally { 
+
+        } finally {
             out.close();
         }
     } 
