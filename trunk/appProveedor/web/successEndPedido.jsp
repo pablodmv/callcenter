@@ -21,47 +21,12 @@
     </head>
     <body>
         <div id="head">
-            <h4>Servicio guardado con exito</h4>
+            <h4>Pedido terminado con exito</h4>
             <h4>Ususario: <%=request.getRemoteUser() %></h4>
         </div>
         <div id="central">
-            <%
-               Proveedor prov =  (Proveedor)request.getAttribute("prov");
-            %>
-            <h4>Lista de Servicios Proveedor: <%=prov.getNombre()%></h4>
-            <table border="1" width="400px" >
-                <tr>
-                    <th>Id</th>
-                    <th>Descripción</th>
-                    <th>Costo</th>
-                    <th>Estado</th>
-                </tr>
-                <% 
-                   List<Servicio> listServ = ServicioServices.obtenerServiciosPorProveedor(prov);   
-                   if(listServ.size() > 0){
-                        for(Servicio serv : listServ){
-
-                %>
-                <tr>
-                    <td><%=serv.getId() %></td>
-                    <td><%=serv.getDescripcion() %></td>
-                    <td><%=serv.getCosto() %></td>
-                    <%
-                       if(serv.isEstado()){
-                    %>
-                        <td>Activo</td>
-                    <% }else{ %>
-                        <td>Inactivo</td>
-                    <% }%>
-                </tr>
-
-
-                        <%}%>
-                <%}%>
-            </table>
-            <br/>
-            <br/>
-            <a href='regServicio.jsp' id='link1'>Volver</a><br/>
+            
+            <a href='index.jsp' id='link1'>Volver</a><br/>
         </div>
         <div id="foot">
             <br/>
