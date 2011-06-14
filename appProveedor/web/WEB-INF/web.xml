@@ -39,7 +39,7 @@
             <web-resource-name>RestProveedor</web-resource-name>
             <description/>
             <url-pattern>/index.jsp</url-pattern>
-            <url-pattern>/login.jsp</url-pattern>
+            <url-pattern>/Login.jsp</url-pattern>
         </web-resource-collection>
         <web-resource-collection>
             <web-resource-name>pages</web-resource-name>
