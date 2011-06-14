@@ -13,6 +13,10 @@
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>Login.jsp</welcome-file>
+    </welcome-file-list>
     <security-constraint>
         <display-name>RestCliente</display-name>
         <web-resource-collection>
@@ -24,8 +28,15 @@
         <web-resource-collection>
             <web-resource-name>pages</web-resource-name>
             <description/>
-            <url-pattern>*.jsp</url-pattern>
+            <url-pattern>/dataError.jsp</url-pattern>
+            <url-pattern>/successQueryProveedores.jsp</url-pattern>
+            <url-pattern>/successQueryServicios.jsp</url-pattern>
+            <url-pattern>/successSaveCliente.jsp</url-pattern>
         </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>Clie</role-name>
+        </auth-constraint>
     </security-constraint>
     <login-config>
         <auth-method>FORM</auth-method>
