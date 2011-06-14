@@ -16,7 +16,7 @@
     </appender>
     <appender name="FA" class="org.apache.log4j.FileAppender">
         <!--Ruta al archivo de log correspondiente -->
-        <param name="File" value="C:/Users/Gustavo Leites/ORT/Semestre 6/Arq.Software/obligatorio/ApplicationA/logs/callRegistry.log"/>
+        <param name="File" value="logs/callRegistry.log"/>
         <param name="Threshold" value="INFO"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d{ABSOLUTE} %5p - %m%n" />
