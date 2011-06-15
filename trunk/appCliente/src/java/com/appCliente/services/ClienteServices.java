@@ -6,9 +6,9 @@
 package com.appCliente.services;
 
 import com.appCliente.persistencia.PersistentBroker;
-import objVirtual.Cliente;
-import objVirtual.Credenciales;
-import objVirtual.Pedido;
+import vo.Cliente;
+import vo.Credenciales;
+import vo.Pedido;
 
 /**
  *

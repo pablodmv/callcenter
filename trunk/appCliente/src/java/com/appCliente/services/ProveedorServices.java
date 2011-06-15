@@ -8,7 +8,7 @@ package com.appCliente.services;
 import com.appCliente.persistencia.PersistentBroker;
 import java.util.ArrayList;
 import java.util.List;
-import objVirtual.Proveedor;
+import vo.Proveedor;
 
 /**
  *
