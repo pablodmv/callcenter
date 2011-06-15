@@ -12,6 +12,10 @@
         <servlet-name>terminarPedido</servlet-name>
         <servlet-class>com.appProveedor.servlet.terminarPedido</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>verServicios</servlet-name>
+        <servlet-class>com.appProveedor.servlet.verServicios</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>regServicio</servlet-name>
         <url-pattern>/regServicio</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>terminarPedido</servlet-name>
         <url-pattern>/terminarPedido</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>verServicios</servlet-name>
+        <url-pattern>/verServicios</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -6,8 +6,8 @@
 package com.appProveedor.services;
 
 import com.appProveedor.persistencia.PersistentBroker;
-import objVirtual.Cliente;
-import objVirtual.Pedido;
+import vo.Cliente;
+import vo.Pedido;
 
 /**
  *

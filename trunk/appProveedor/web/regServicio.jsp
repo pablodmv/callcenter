@@ -34,6 +34,7 @@
                 </table>
                 
             </form>
+             <a href='index.jsp' id='link1'>Volver</a><br/>
         </div>
         <div id="foot">
             <br/>
