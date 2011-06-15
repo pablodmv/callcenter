@@ -7,7 +7,7 @@ package applicationa.emulatorMessages;
 
 import RemoteObjects.PedidoRemoto;
 import java.rmi.Naming;
-import objVirtual.Pedido;
+import vo.Pedido;
 
 /**
  *
