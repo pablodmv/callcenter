@@ -16,14 +16,15 @@
     </head>
     <body>
         <div id="head">
-            <h4>Bienvenido al Aplicativo de Clientes</h4>
-            <h4>Ususario: <%=request.getRemoteUser() %></h4>
+           <h4>Bienvenido al Aplicativo de Clientes</h4>
+           <h4>Usuario: <%=request.getRemoteUser() %></h4>
         </div>
         <div id="central">
             <a href="verProveedores" id="link2">Consultar proveedores</a><br/>
         </div>
+        <br/>
         <div id="foot">
-            <br/>
+            
             Arquitectura de Software
         </div>
     </body>
