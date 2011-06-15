@@ -7,7 +7,7 @@ package RemoteObjects;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-import objVirtual.Pedido;
+import vo.Pedido;
 
 
 /**

@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.rmi.RemoteException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import objVirtual.Pedido;
+import vo.Pedido;
 
 /**
  *

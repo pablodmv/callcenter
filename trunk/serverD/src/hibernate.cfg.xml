@@ -7,6 +7,6 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/callcenter</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
-    <mapping resource="objVirtual/Pedido.hbm.xml"/>
+    <mapping resource="vo/Pedido.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

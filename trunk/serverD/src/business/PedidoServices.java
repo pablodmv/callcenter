@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import objVirtual.Pedido;
+import vo.Pedido;
 import persistence.PersistentBroker;
 
 /**
