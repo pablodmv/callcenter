@@ -23,6 +23,7 @@
         <div id="central">
             <a href="regServicio.jsp" id="link1">Ingresar a registro de servicios</a><br/>
             <a href="verPedidos" id="link2">Ingresar a consulta de pedidos</a><br/>
+             <a href="verServicios" id="link2">Ingresar a consulta de Servicios ingresados</a><br/>
         </div>
         <div id="foot">
             <br/>

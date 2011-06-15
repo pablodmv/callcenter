@@ -8,12 +8,12 @@ package com.appProveedor.persistencia;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import objVirtual.Cliente;
-import objVirtual.Credenciales;
-import objVirtual.Pedido;
-import objVirtual.PersistenceObj;
-import objVirtual.Proveedor;
-import objVirtual.Servicio;
+import vo.Cliente;
+import vo.Credenciales;
+import vo.Pedido;
+import vo.PersistenceObj;
+import vo.Proveedor;
+import vo.Servicio;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -85,7 +85,7 @@ public class PersistentBroker {
             Session session = sessionFactory.openSession();
             tx = session.beginTransaction();
 
-            Query q = session.createQuery("From objVirtual.Credenciales as Cred Where Cred.login='" +
+            Query q = session.createQuery("From vo.Credenciales as Cred Where Cred.login='" +
                     usr + "'");
             cred = (Credenciales)q.uniqueResult();
             tx.commit();
@@ -113,7 +113,7 @@ public class PersistentBroker {
             Session session = sessionFactory.openSession();
             tx = session.beginTransaction();
             
-            Query q = session.createQuery("From objVirtual.Proveedor as Prov where Prov.credenciales.id=" + id);
+            Query q = session.createQuery("From vo.Proveedor as Prov where Prov.credenciales.id=" + id);
             prov = (Proveedor)q.uniqueResult();
 
             tx.commit();
@@ -134,7 +134,7 @@ public class PersistentBroker {
 
         try{
             Session session = sessionFactory.openSession();
-            listServicios = session.createQuery("From objVirtual.Servicio as Servicio where Servicio.idProveedor= :idProv")
+            listServicios = session.createQuery("From vo.Servicio as Servicio where Servicio.idProveedor= :idProv")
                             .setParameter("idProv", prov.getId()).list();
 
             session.disconnect();
@@ -154,7 +154,7 @@ public class PersistentBroker {
         List<Pedido> listPedidos = new ArrayList<Pedido>();
         try{
             Session session = sessionFactory.openSession();
-            listPedidos = session.createQuery("From objVirtual.Pedido as Pedido where Pedido.idProveedor= :idProv and Pedido.estado= :estado")
+            listPedidos = session.createQuery("From vo.Pedido as Pedido where Pedido.idProveedor= :idProv and Pedido.estado= :estado")
                           .setParameter("idProv", prov.getId())
                           .setParameter("estado", Boolean.TRUE).list();
 
@@ -175,7 +175,7 @@ public class PersistentBroker {
         try{
 
             Session session = sessionFactory.openSession();
-            cli = (Cliente)session.createQuery("From objVirtual.Cliente as Cliente Where Cliente.id= :idCli")
+            cli = (Cliente)session.createQuery("From vo.Cliente as Cliente Where Cliente.id= :idCli")
                   .setParameter("idCli",ped.getIdCliente()).uniqueResult();
 
             session.disconnect();
@@ -195,7 +195,7 @@ public class PersistentBroker {
         try{
 
             Session session = sessionFactory.openSession();
-            pedido = (Pedido)session.createQuery("From objVirtual.Pedido as Pedido Where Pedido.id= :idPed")
+            pedido = (Pedido)session.createQuery("From vo.Pedido as Pedido Where Pedido.id= :idPed")
                   .setParameter("idPed",id).uniqueResult();
 
             session.disconnect();

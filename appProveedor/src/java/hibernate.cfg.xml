@@ -9,10 +9,10 @@
     <property name="hibernate.connection.password">root</property>
     <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
     <property name="hibernate.show_sql">true</property>
-    <mapping resource="objVirtual/Pedido.hbm.xml"/>
-    <mapping resource="objVirtual/Credenciales.hbm.xml"/>
-    <mapping resource="objVirtual/Cliente.hbm.xml"/>
-    <mapping resource="objVirtual/Proveedor.hbm.xml"/>
-    <mapping resource="objVirtual/Servicio.hbm.xml"/>
+    <mapping resource="vo/Pedido.hbm.xml"/>
+    <mapping resource="vo/Credenciales.hbm.xml"/>
+    <mapping resource="vo/Cliente.hbm.xml"/>
+    <mapping resource="vo/Proveedor.hbm.xml"/>
+    <mapping resource="vo/Servicio.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

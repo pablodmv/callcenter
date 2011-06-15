@@ -6,8 +6,8 @@
 package com.appProveedor.services;
 
 import com.appProveedor.persistencia.PersistentBroker;
-import objVirtual.Credenciales;
-import objVirtual.Proveedor;
+import vo.Credenciales;
+import vo.Proveedor;
 
 /**
  *

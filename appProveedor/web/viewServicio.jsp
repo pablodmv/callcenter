@@ -21,7 +21,7 @@
     </head>
     <body>
         <div id="head">
-            <h4>Servicio guardado con exito</h4>
+            
             <h4>Ususario: <%=request.getRemoteUser() %></h4>
         </div>
         <div id="central">
@@ -61,7 +61,7 @@
             </table>
             <br/>
             <br/>
-            <a href='regServicio.jsp' id='link1'>Volver</a><br/>
+            <a href='index.jsp' id='link1'>Volver</a><br/>
         </div>
         <div id="foot">
             <br/>

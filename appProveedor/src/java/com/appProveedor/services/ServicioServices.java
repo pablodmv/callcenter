@@ -8,8 +8,8 @@ package com.appProveedor.services;
 import com.appProveedor.persistencia.PersistentBroker;
 import java.util.ArrayList;
 import java.util.List;
-import objVirtual.Proveedor;
-import objVirtual.Servicio;
+import vo.Proveedor;
+import vo.Servicio;
 
 /**
  *
