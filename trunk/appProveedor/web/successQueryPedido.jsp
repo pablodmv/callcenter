@@ -35,6 +35,7 @@
                     <th>Id</th>
                     <th>Nom.Cliente</th>
                     <th>Tel.Cliente</th>
+                    <th>Direccion</th>
                     <th>Pedido</th>
                     <th>Estado</th>
                     <th>Acción</th>
@@ -51,6 +52,7 @@
                     <td align="center"><%=p.getId() %></td>
                     <td align="center"><%=cli.getNombre() %></td>
                     <td align="center"><%=cli.getTelefono() %></td>
+                    <td align="center"><%=cli.getDireccion() %></td>
                     <td><%=p.getMensaje() %></td>
                     <%
                        if(p.isEstado()){
